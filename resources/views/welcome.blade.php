@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+<!doctype html>
 <html class="h-full" lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Whisper</title>
 
@@ -10,7 +10,7 @@
 {{--    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">--}}
 
 
-{{--    <link href="{{ asset('css/app.css') }}" rel="stylesheet">--}}
+    @vite('resources/css/app.css')
 </head>
 <body class="antialiased h-full">
 {{--@if(flash()->message)--}}
@@ -51,7 +51,7 @@
                     <p class="mt-1 text-base text-gray-500">A laravel websocket server for the everyday man.</p>
                 </div>
                 <div class="mt-10 flex space-x-3 sm:border-l sm:border-transparent sm:pl-6">
-                    <a href="#" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-orange-600 hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"> Login</a>
+                    <a href="#" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"> Login</a>
                 </div>
             </div>
         </main>
